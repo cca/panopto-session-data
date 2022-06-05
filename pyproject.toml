@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "panopto-db"
+version = "0.1.0"
+description = "create a database out of Panopto CSV reports"
+authors = ["phette23 <phette23@gmail.com>"]
+license = "ECL-2.0"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+csvkit = "^1.0.7"
+pandas = "^1.4.2"
+
+[tool.poetry.dev-dependencies]
+jupyter = "^1.0.0"
+black = {version = "^22.3.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
