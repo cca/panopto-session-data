@@ -24,7 +24,7 @@ Other reports could be added. "Session ID" is the key that links together sessio
 
 ## Non-iPython Notebook approaches
 
-Here are the fields contained in the two sessiosn reports:
+Here are the fields contained in the two sessions reports:
 
 ```sh
 > head -n1 sessionusage.csv
