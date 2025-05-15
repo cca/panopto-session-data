@@ -1,19 +1,19 @@
-[tool.poetry]
-name = "panopto-db"
+[project]
+name = "panopto-session-data"
 version = "0.1.0"
-description = "create a database out of Panopto CSV reports"
-authors = ["phette23 <phette23@gmail.com>"]
+description = "Analyze Panopto CSV reports with Pandas"
+authors = [{"name" = "Eric Phetteplace", "email" = "phette23@gmail.com"}]
 license = "ECL-2.0"
+# numpy doesn't build on 3.11 yet
+requires-python = ">=3.10,<3.11"
+dependencies = [
+    "csvkit>=1.0.7",
+    "pandas>=1.4.2",
+]
+readme = "README.md"
 
-[tool.poetry.dependencies]
-python = "^3.10"
-csvkit = "^1.0.7"
-pandas = "^1.4.2"
-
-[tool.poetry.dev-dependencies]
-jupyter = "^1.0.0"
-black = {version = "^22.3.0", allow-prereleases = true}
-
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+[dependency-groups]
+dev = [
+    "jupyter>=1.0.0",
+    "black>=22.3.0",
+]

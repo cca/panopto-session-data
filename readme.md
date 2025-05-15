@@ -4,14 +4,7 @@ Analyzing Panopto session creation and usage so we can create scenarios for our 
 
 ## Setup
 
-This project uses python3 and [poetry](https://python-poetry.org/) for dependency management.
-
-```sh
-> poetry shell
-> poetry install
-```
-
-Then open the iPython notebook (e.g. in Visual Studio Code or iPython's own app) to work on the data.
+This project uses python3 and [uv](https://docs.astral.sh/uv) for dependency management. Run `uv sync` to create a virtualenv. Then open the iPython notebook (e.g. in Visual Studio Code or iPython's own app) to work on the data. We may need to tell the notebook app where the virtualenv is located.
 
 ## Panopto Reports
 
